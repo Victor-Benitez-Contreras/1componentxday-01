@@ -1,0 +1,24 @@
+Desarrollo de componentes de una interfaz - Semana 1 (13-07-2020 a 10-07-2020)
+.
+Todos los componentes deben seguir los mismos lineamientos gráficos 
+(es decir, tener el mismo lenguaje visual que se entiendan como parte de un todo).
+.
+Tema: ecommerce de perifericos de PC y gadget´s tecnológicos.
+.
+.
+Lunes - *Sin Componente (compensar en el resto de la semana)* Card: Desarrollo de una carta de producto, con un placeholder para img, título, 
+descripción, versiones, disponibilidad.  
+.
+Martes - Desarrollo de ecosistema de 5 botones: 5 tipos de botones de una interfaz. (primario, secundarios, auxiliares)
+.
+Miércoles - Desarrollo de Navbar, 2 tipos y 2 estilos cada una.
+.
+Jueves - Desarrollo de formularios Login, Registro y Contacto.
+.
+Viernes - Desarrollo de listas de características, funciones, etc.
+.
+Sábado - Desarrollo de títulos y párrafos.
+.
+Domingo: - Desarrollo de layout de vista de producto (grilla, disposición elementos)
+
+
