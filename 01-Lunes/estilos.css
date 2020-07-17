@@ -141,11 +141,30 @@ img {
     justify-content: center;
 }
 
-
-
+.precio__stock{
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    margin: auto;    
+}
 .precio{
     font-weight: lighter;
     font-size: 1.8rem;
+    display: inline-block;
+    padding: 0rem 0.3rem;
+    color: black;
+}
+.stock{
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem 0.3rem;
+    font-style: italic;
+    font-weight: lighter;
+    color: #999;
+}
+.stock span{
+    color: #aaa;
+    font-weight: 400;
 }
 
 
