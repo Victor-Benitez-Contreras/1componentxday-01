@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
 }
-
 header{
     max-width: 1140px;
     margin: auto;
@@ -14,12 +12,10 @@ header{
     height: auto;
     padding: 5rem 0rem;
 }
-
 h1{
     font-size: 3rem;
     font-weight: normal;
 }
-
 p{
     max-width: 600px;
     text-align: center;
@@ -31,11 +27,9 @@ p{
 .tema {
     font-size: 1.3rem;
 }
-
 span{
     font-weight: bold;
 }
-
 .contenedor {
     max-width: 600px;
     margin: auto;
@@ -43,7 +37,6 @@ span{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 2rem;
 }
-
 .dia {
     color: #aaa;
     font-size: 2.2rem;
@@ -51,16 +44,159 @@ span{
     text-align: right;
     padding: 1rem 0rem;
 }
-
 .descripcion{
     font-size: 1rem;
     font-weight: lighter;
     text-align: left;
     margin: auto;
 }
+footer{
+    text-align: center;
+    background-color: #fff;
+    margin: auto;
+    height: 4rem;
+}
+.caja__desafio{
+    height: auto;
+    background-color: #fff;
+    width: 80%;
+    border-bottom: 2px solid #999;
+    border-top: 2px solid #999;
+    text-align: center;
+    margin: auto;
+}
 
+/* ------- */
+/* aqui comienzan los estilos del componente */
+/* ------- */
+
+.botones{
+    max-width: 90%;
+    height: auto;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 1rem;
+}
+
+.caja__boton{
+    padding: 1rem 0rem;
+}
+
+
+.ancla__btn{
+    text-decoration: none;
+    color: #ababab;
+    padding: 20px 30px;  
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+.btn__mediano{
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0PX;
+}
+.btn__grande {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0px;
+    background: linear-gradient(-70deg, #5004ad, #7302ff);
+}
+
+
+
+.btn__aux1{
+    box-shadow: 0px 0px 15px 0px #ddc2ff;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+.btn__aux1:hover{
+    box-shadow: 0px 0px 25px 1px #d0adfc;
+}
+.btn__aux1 .ancla__btn{
+    color: #d0adfc;
+    font-weight: 300;
+}
+
+
+.btn__sec1{
+    border: 2px solid #5004ad;
+    box-shadow: 0px 0px 15px -10px #5004ad;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+.btn__sec1:hover{
+    box-shadow: 0px 0px 20px -5px #5004ad;
+}
+.btn__sec1 .ancla__btn{
+    color: #5004ad;
+    font-weight: bold;
+}
+
+
+.btn__prin{
+    box-shadow: 0px 0px 15px 0px #ddc2ff;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+.btn__prin:hover{
+    box-shadow: 0px 0px 30px -10px #5004ad;
+}
+.btn__prin .ancla__btn{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;  
+}
+
+
+.btn__sec2{
+    box-shadow: 0px 0px 15px -5px #5004ad;
+    background-color: #fff;
+    transition-property: box-shadow background-color;
+    transition-duration: 0.5s;
+}
+.btn__sec2:hover{
+    background-color: #7302ff;
+    box-shadow: 0px 0px 0px 0px #5004ad;
+}
+.btn__sec2 .ancla__btn{
+    font-weight: bold;
+    color: #5004ad ;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+.btn__sec2 .ancla__btn:hover{
+    color: #fff ;
+}
+
+
+.btn__aux2 {
+    border: 2px solid #ddc2ff;
+    box-shadow: inset 0px 0px 0px 0px #ddc2ff;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+.btn__aux2:hover{
+    box-shadow: inset 0px 0px 15px 0px #ddc2ff;
+}
+.btn__aux2 .ancla__btn{
+    
+    color: #d0adfc;
+    letter-spacing: none;
+}
+
+
+
+
+
+/* ------
+inicio de media queries
+------ */
 
 @media (max-width: 768px) {
+
     .contenedor {
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -81,4 +217,24 @@ span{
         margin: auto;
     }
 
+    .botones{
+        max-width: 100%;
+        height: auto;
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1rem;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .botones{
+        max-width: 100%;
+        height: auto;
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+    }
 }
