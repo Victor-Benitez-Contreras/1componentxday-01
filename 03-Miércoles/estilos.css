@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -74,13 +75,14 @@ span{
 /* ------- */
 
 
+/* navbar 1 */
 
-nav{
+.barra__nav1{
     width: 100%;
     height: 5rem;
     background-color: #5004ad;
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 1fr 4fr;
     align-items: center;
     margin: 2rem auto;
 }
@@ -104,17 +106,40 @@ nav{
 }
 .elemento__lista{
     display: inline-block;
-    padding: 0.4rem 1.5rem;
+    padding: 0.4rem 1.1rem;
 }
 .elemento__lista a{
     text-decoration: none;
     color: #fff;   
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
 
+/* navbar 2 */
+
+.contenedor__navbar2{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.barra__nav2{
+    width: 100%;
+    height: auto;
+    background-color: #5004ad;
+    margin: 2rem auto;   
+    padding: 2rem 0rem;
+}
+
+.ancla__barra-nav2{
+    text-decoration: none;
+    color: #fff; 
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
 
 
 
