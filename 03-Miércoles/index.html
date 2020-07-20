@@ -40,12 +40,11 @@
 
             <div class="contenedor__navbar2">
                 <nav class="barra__nav2">
-                    
+                    <div id="marcador"></div>
                     <a class="ancla__barra-nav2" href=#>Inicio</a>
                     <a class="ancla__barra-nav2" href=#>Productos</a>
                     <a class="ancla__barra-nav2" href=#>Quienes Somos</a>
                     <a class="ancla__barra-nav2" href=#>Contacto</a>
-                    <div id="marcador"></div>
                 </nav>
             </div>
 
@@ -55,16 +54,19 @@
     </div>
     
 <script type="text/javascript">
+
     var marcador = document.querySelector("#marcador");
-    var item = document.querySelector(".ancla__barra-nav2");
+    var item = document.querySelectorAll(".ancla__barra-nav2");
 
     function indicator(e){
-        marcador.style.left = e.offsetleft+"px"+;
-        marcador.style.width = e.offsetwidth+"px"+;
+        marcador.style.left = e.offsetLeft+"px";
+        marcador.style.width = e.offsetWidth+"px";
     }
 
     item.forEach(link => {
-        link.addEventListener
+        link.addEventListener("click", (e)=>{
+            indicator(e.target)
+        });
     });
 
 </script>    
