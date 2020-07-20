@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+    height: auto;
+    padding: 2rem 0rem;
+}
+h1{
+    font-size: 3rem;
+    font-weight: normal;
+}
+p{
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    color: #828282;
+    text-justify: distribute-all-lines;
+    padding: 1rem 0rem;
+}
+.tema {
+    font-size: 1.3rem;
+}
+span{
+    font-weight: bold;
+}
+.contenedor {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+}
+.dia {
+    color: #aaa;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.descripcion{
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: left;
+    margin: auto;
+}
+.caja__desafio{
+    height: auto;
+    background-color: #fff;
+    width: 80%;
+    border-bottom: 2px solid #999;
+    border-top: 2px solid #999;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);    
+    margin: auto;
+}
+
+footer{
+    text-align: center;
+    background-color: #fff;
+    margin: auto;
+    height: 4rem;
+}
+
+/* ------- */
+/* aqui comienzan los estilos del componente */
+/* ------- */
+
+.caja__boton{
+    padding: 1rem 0rem;
+}
+.btn__aux1{
+    box-shadow: 0px 0px 18px 0px #ddc2ff;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+.btn__aux1:hover{
+    box-shadow: 0px 0px 25px 1px #d0adfc;
+}
+.btn__aux1 .ancla__btn{
+    color: #5004ad;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn__mediano{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+/* ------
+inicio de media queries
+------ */
+
+@media (max-width: 960px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 2rem;
+    }
+
+    .dia {
+        color: #aaa;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .descripcion{
+        font-size: 1rem;
+        font-weight: lighter;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .caja__desafio{
+    height: auto;
+    background-color: #fff;
+    width: 80%;
+    border-bottom: 2px solid #999;
+    border-top: 2px solid #999;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    grid-template-rows: repeat(4,200px);
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+
+}

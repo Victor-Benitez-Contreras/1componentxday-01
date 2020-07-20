@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -40,11 +40,12 @@
 
             <div class="contenedor__navbar2">
                 <nav class="barra__nav2">
-                    <div id="marcador"></div>
+                    
                     <a class="ancla__barra-nav2" href=#>Inicio</a>
                     <a class="ancla__barra-nav2" href=#>Productos</a>
                     <a class="ancla__barra-nav2" href=#>Quienes Somos</a>
                     <a class="ancla__barra-nav2" href=#>Contacto</a>
+                    <div id="marcador"></div>
                 </nav>
             </div>
 
@@ -54,8 +55,17 @@
     </div>
     
 <script type="text/javascript">
+    var marcador = document.querySelector("#marcador");
+    var item = document.querySelector(".ancla__barra-nav2");
 
+    function indicator(e){
+        marcador.style.left = e.offsetleft+"px"+;
+        marcador.style.width = e.offsetwidth+"px"+;
+    }
 
+    item.forEach(link => {
+        link.addEventListener
+    });
 
 </script>    
 
