@@ -105,14 +105,20 @@ span{
     margin: auto 2rem auto auto;
 }
 .elemento__lista{
-    display: inline-block;
-    padding: 0.4rem 1.1rem;
+    display: inline-block; 
+    padding: 0.4rem 0.8rem;
+    border: 2px solid transparent;
+    transition-property: border;
+    transition-duration: 0.3s;    
+}
+.elemento__lista:hover{
+    border: 2px solid #fff;
 }
 .elemento__lista a{
-    text-decoration: none;
-    color: #fff;   
+    text-decoration: none; 
     font-weight: 300;
     font-size: 1rem;
+    color: #fff;
 }
 
 
@@ -141,7 +147,7 @@ span{
     position: relative;
     text-decoration: none;
     color: #fff; 
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: lighter;
     margin: 0px 20px;
 }
